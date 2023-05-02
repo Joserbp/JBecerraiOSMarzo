@@ -17,8 +17,7 @@ class FormController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-
+        let result = Alumno.GetAll(DbManager: dbManager)
     }
     
     @IBAction func btnRecuperarDatosAction() {
@@ -30,12 +29,11 @@ class FormController: UIViewController {
         Alumno.Add(alumno: alumno, DbManager: dbManager)
         
     }
-    var test : Int?
     
     @IBAction func ActionButons(_ sender: UIButton) {
         
         let btnSeleccionado = sender.titleLabel?.text
-        print(btnSeleccionado)
+        
         if(btnSeleccionado == "Actulizar"){
             
         }

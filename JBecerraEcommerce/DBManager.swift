@@ -16,7 +16,6 @@ class DBManager {
     init(){
         self.db = Get()
     }
-    
  
     func Get() -> OpaquePointer?{
         let filePath = try! FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0].appendingPathComponent(path)

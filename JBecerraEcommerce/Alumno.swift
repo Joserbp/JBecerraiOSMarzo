@@ -11,6 +11,7 @@ import SQLite3
 class Alumno{  //Modelo //Logica
     
     //Propiedades
+    var IdAlumno : Int? = nil
     var Nombre :  String? = nil
     var ApellidoPaterno :  String? = nil
 
@@ -35,10 +36,36 @@ class Alumno{  //Modelo //Logica
         sqlite3_finalize(statement)
         sqlite3_close(DbManager.db)
     }
-    //ADD
-    //UPDATE
-    //DELETE
+
     //GETALL
-    //GETBY
+    
+    static func GetAll(DbManager : DBManager) -> Result{
+        var result = Result()
+        let query = "SELECT IdAlumno,Nombre,ApellidoPaterno FROM Alumno"
+        var statement : OpaquePointer?
+        do{
+            if try sqlite3_prepare_v2(DbManager.db, query, -1, &statement, nil) == SQLITE_OK{
+                result.Objects = []
+                while try sqlite3_step(statement) == SQLITE_ROW {
+                    var alumno = Alumno()
+                    alumno.IdAlumno = Int(sqlite3_column_int(statement, 0))
+                    alumno.Nombre = String(describing: String(cString: sqlite3_column_text(statement, 1)))
+                    alumno.ApellidoPaterno = String(describing: String(cString: sqlite3_column_text(statement, 2)))
+                    
+                    result.Objects?.append(alumno)
+                }
+                result.Correct = true
+            }else  {
+                result.Correct = false
+                result.ErrorMessage = "Ocurrio un error"
+            }
+        }
+        catch let ex{
+            result.Correct = false
+            result.ErrorMessage = ex.localizedDescription //Ex.Message
+            result.Ex = ex
+        }
+        return result
+    }
     
 }
