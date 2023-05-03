@@ -16,6 +16,9 @@
 		EB21C37229FC50120060A3BA /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB21C37129FC50120060A3BA /* DBManager.swift */; };
 		EB21C37429FC51100060A3BA /* Alumno.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB21C37329FC51100060A3BA /* Alumno.swift */; };
 		EB21C3762A0177060060A3BA /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB21C3752A0177060060A3BA /* Result.swift */; };
+		EB21C3782A02DA230060A3BA /* GetAllAlumnoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB21C3772A02DA230060A3BA /* GetAllAlumnoController.swift */; };
+		EB21C37B2A02E4FB0060A3BA /* AlumnoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB21C3792A02E4FB0060A3BA /* AlumnoCell.swift */; };
+		EB21C37C2A02E4FB0060A3BA /* AlumnoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB21C37A2A02E4FB0060A3BA /* AlumnoCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		EB21C37129FC50120060A3BA /* DBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
 		EB21C37329FC51100060A3BA /* Alumno.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alumno.swift; sourceTree = "<group>"; };
 		EB21C3752A0177060060A3BA /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		EB21C3772A02DA230060A3BA /* GetAllAlumnoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllAlumnoController.swift; sourceTree = "<group>"; };
+		EB21C3792A02E4FB0060A3BA /* AlumnoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlumnoCell.swift; sourceTree = "<group>"; };
+		EB21C37A2A02E4FB0060A3BA /* AlumnoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlumnoCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +78,9 @@
 				EB21C37129FC50120060A3BA /* DBManager.swift */,
 				EB21C37329FC51100060A3BA /* Alumno.swift */,
 				EB21C3752A0177060060A3BA /* Result.swift */,
+				EB21C3772A02DA230060A3BA /* GetAllAlumnoController.swift */,
+				EB21C3792A02E4FB0060A3BA /* AlumnoCell.swift */,
+				EB21C37A2A02E4FB0060A3BA /* AlumnoCell.xib */,
 			);
 			path = JBecerraEcommerce;
 			sourceTree = "<group>";
@@ -137,6 +146,7 @@
 				EB21C36A29FAEEA70060A3BA /* LaunchScreen.storyboard in Resources */,
 				EB21C36729FAEEA70060A3BA /* Assets.xcassets in Resources */,
 				EB21C36529FAEEA50060A3BA /* Main.storyboard in Resources */,
+				EB21C37C2A02E4FB0060A3BA /* AlumnoCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,10 +159,12 @@
 			files = (
 				EB21C3762A0177060060A3BA /* Result.swift in Sources */,
 				EB21C36229FAEEA50060A3BA /* FormController.swift in Sources */,
+				EB21C3782A02DA230060A3BA /* GetAllAlumnoController.swift in Sources */,
 				EB21C37429FC51100060A3BA /* Alumno.swift in Sources */,
 				EB21C35E29FAEEA50060A3BA /* AppDelegate.swift in Sources */,
 				EB21C36029FAEEA50060A3BA /* SceneDelegate.swift in Sources */,
 				EB21C37229FC50120060A3BA /* DBManager.swift in Sources */,
+				EB21C37B2A02E4FB0060A3BA /* AlumnoCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
