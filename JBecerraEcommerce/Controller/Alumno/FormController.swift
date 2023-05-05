@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwipeCellKit
 
 class FormController: UIViewController {
 
@@ -17,7 +18,7 @@ class FormController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let result = Alumno.GetAll(DbManager: dbManager)
+        let result = AlumnoViewModel.GetAll(DbManager: dbManager)
     }
     
     @IBAction func btnRecuperarDatosAction() {
@@ -26,7 +27,7 @@ class FormController: UIViewController {
         alumno.Nombre = txtNombreOutlet.text!
         alumno.ApellidoPaterno = txtApellidoPaterno.text!
         
-        Alumno.Add(alumno: alumno, DbManager: dbManager)
+        AlumnoViewModel.Add(alumno: alumno, DbManager: dbManager)
         
     }
     
@@ -46,6 +47,10 @@ class FormController: UIViewController {
     }
     
     
+    @IBAction func SeguesGetAll(_ sender: UIButton) {
+        
+        self.performSegue(withIdentifier: "SeguesGetAll", sender: self)
+    }
     
     
 }

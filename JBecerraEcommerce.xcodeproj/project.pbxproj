@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		858415E30EB7F8EA80CD9996 /* Pods_JBecerraEcommerce.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 826EAF61867BA5C23CB1EF46 /* Pods_JBecerraEcommerce.framework */; };
+		EB0AE26C2A042F42009F0B21 /* AlumnoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0AE26B2A042F42009F0B21 /* AlumnoViewModel.swift */; };
 		EB21C35E29FAEEA50060A3BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB21C35D29FAEEA50060A3BA /* AppDelegate.swift */; };
 		EB21C36029FAEEA50060A3BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB21C35F29FAEEA50060A3BA /* SceneDelegate.swift */; };
 		EB21C36229FAEEA50060A3BA /* FormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB21C36129FAEEA50060A3BA /* FormController.swift */; };
@@ -22,6 +24,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		335972A494F8D8EF4860F601 /* Pods-JBecerraEcommerce.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JBecerraEcommerce.release.xcconfig"; path = "Target Support Files/Pods-JBecerraEcommerce/Pods-JBecerraEcommerce.release.xcconfig"; sourceTree = "<group>"; };
+		59746168BB84EF6B2C72BB42 /* Pods-JBecerraEcommerce.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JBecerraEcommerce.debug.xcconfig"; path = "Target Support Files/Pods-JBecerraEcommerce/Pods-JBecerraEcommerce.debug.xcconfig"; sourceTree = "<group>"; };
+		826EAF61867BA5C23CB1EF46 /* Pods_JBecerraEcommerce.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JBecerraEcommerce.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB0AE26B2A042F42009F0B21 /* AlumnoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlumnoViewModel.swift; sourceTree = "<group>"; };
 		EB21C35A29FAEEA50060A3BA /* JBecerraEcommerce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JBecerraEcommerce.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB21C35D29FAEEA50060A3BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB21C35F29FAEEA50060A3BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,17 +49,99 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				858415E30EB7F8EA80CD9996 /* Pods_JBecerraEcommerce.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		523FBFD10DA2560204D8A4AA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				59746168BB84EF6B2C72BB42 /* Pods-JBecerraEcommerce.debug.xcconfig */,
+				335972A494F8D8EF4860F601 /* Pods-JBecerraEcommerce.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		86FB391997CECEBFF9CAA32F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				826EAF61867BA5C23CB1EF46 /* Pods_JBecerraEcommerce.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EB0AE2662A042E22009F0B21 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EB21C37329FC51100060A3BA /* Alumno.swift */,
+				EB21C3752A0177060060A3BA /* Result.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EB0AE2672A042E2D009F0B21 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EB0AE26D2A042FD5009F0B21 /* Alumno */,
+				EB21C36329FAEEA50060A3BA /* Main.storyboard */,
+				EB21C36829FAEEA70060A3BA /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EB0AE2682A042E35009F0B21 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EB0AE26B2A042F42009F0B21 /* AlumnoViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EB0AE2692A042E46009F0B21 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EB0AE26E2A042FFD009F0B21 /* Alumno */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EB0AE26A2A042EBC009F0B21 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				EB21C37129FC50120060A3BA /* DBManager.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		EB0AE26D2A042FD5009F0B21 /* Alumno */ = {
+			isa = PBXGroup;
+			children = (
+				EB21C3792A02E4FB0060A3BA /* AlumnoCell.swift */,
+				EB21C37A2A02E4FB0060A3BA /* AlumnoCell.xib */,
+			);
+			path = Alumno;
+			sourceTree = "<group>";
+		};
+		EB0AE26E2A042FFD009F0B21 /* Alumno */ = {
+			isa = PBXGroup;
+			children = (
+				EB21C36129FAEEA50060A3BA /* FormController.swift */,
+				EB21C3772A02DA230060A3BA /* GetAllAlumnoController.swift */,
+			);
+			path = Alumno;
+			sourceTree = "<group>";
+		};
 		EB21C35129FAEEA50060A3BA = {
 			isa = PBXGroup;
 			children = (
 				EB21C35C29FAEEA50060A3BA /* JBecerraEcommerce */,
 				EB21C35B29FAEEA50060A3BA /* Products */,
+				523FBFD10DA2560204D8A4AA /* Pods */,
+				86FB391997CECEBFF9CAA32F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,19 +156,15 @@
 		EB21C35C29FAEEA50060A3BA /* JBecerraEcommerce */ = {
 			isa = PBXGroup;
 			children = (
+				EB0AE26A2A042EBC009F0B21 /* Util */,
+				EB0AE2692A042E46009F0B21 /* Controller */,
+				EB0AE2682A042E35009F0B21 /* ViewModel */,
+				EB0AE2672A042E2D009F0B21 /* View */,
+				EB0AE2662A042E22009F0B21 /* Model */,
 				EB21C35D29FAEEA50060A3BA /* AppDelegate.swift */,
 				EB21C35F29FAEEA50060A3BA /* SceneDelegate.swift */,
-				EB21C36129FAEEA50060A3BA /* FormController.swift */,
-				EB21C36329FAEEA50060A3BA /* Main.storyboard */,
 				EB21C36629FAEEA70060A3BA /* Assets.xcassets */,
-				EB21C36829FAEEA70060A3BA /* LaunchScreen.storyboard */,
 				EB21C36B29FAEEA70060A3BA /* Info.plist */,
-				EB21C37129FC50120060A3BA /* DBManager.swift */,
-				EB21C37329FC51100060A3BA /* Alumno.swift */,
-				EB21C3752A0177060060A3BA /* Result.swift */,
-				EB21C3772A02DA230060A3BA /* GetAllAlumnoController.swift */,
-				EB21C3792A02E4FB0060A3BA /* AlumnoCell.swift */,
-				EB21C37A2A02E4FB0060A3BA /* AlumnoCell.xib */,
 			);
 			path = JBecerraEcommerce;
 			sourceTree = "<group>";
@@ -92,9 +176,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EB21C36E29FAEEA70060A3BA /* Build configuration list for PBXNativeTarget "JBecerraEcommerce" */;
 			buildPhases = (
+				920023BC53A96D446F89BE0F /* [CP] Check Pods Manifest.lock */,
 				EB21C35629FAEEA50060A3BA /* Sources */,
 				EB21C35729FAEEA50060A3BA /* Frameworks */,
 				EB21C35829FAEEA50060A3BA /* Resources */,
+				60FD7792CFB8C7FD95A18CFE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +238,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		60FD7792CFB8C7FD95A18CFE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JBecerraEcommerce/Pods-JBecerraEcommerce-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JBecerraEcommerce/Pods-JBecerraEcommerce-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JBecerraEcommerce/Pods-JBecerraEcommerce-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		920023BC53A96D446F89BE0F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JBecerraEcommerce-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EB21C35629FAEEA50060A3BA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -159,6 +287,7 @@
 			files = (
 				EB21C3762A0177060060A3BA /* Result.swift in Sources */,
 				EB21C36229FAEEA50060A3BA /* FormController.swift in Sources */,
+				EB0AE26C2A042F42009F0B21 /* AlumnoViewModel.swift in Sources */,
 				EB21C3782A02DA230060A3BA /* GetAllAlumnoController.swift in Sources */,
 				EB21C37429FC51100060A3BA /* Alumno.swift in Sources */,
 				EB21C35E29FAEEA50060A3BA /* AppDelegate.swift in Sources */,
@@ -306,6 +435,7 @@
 		};
 		EB21C36F29FAEEA70060A3BA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59746168BB84EF6B2C72BB42 /* Pods-JBecerraEcommerce.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -334,6 +464,7 @@
 		};
 		EB21C37029FAEEA70060A3BA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 335972A494F8D8EF4860F601 /* Pods-JBecerraEcommerce.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

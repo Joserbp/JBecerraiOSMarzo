@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1XH-If-SeN">
-    <device id="retina6_5" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kVn-Ip-oxi">
+    <device id="retina6_5" orientation="portrait" appearance="dark"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -8,6 +8,22 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="pVa-nL-Lok">
+            <objects>
+                <navigationController id="kVn-Ip-oxi" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="IeP-0v-MUA">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="4ac-oP-eNl" kind="relationship" relationship="rootViewController" id="4h2-so-oP6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aM3-t9-gzE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2706" y="108"/>
+        </scene>
         <!--Form Controller-->
         <scene sceneID="5st-iM-b2o">
             <objects>
@@ -81,18 +97,53 @@
                                     <action selector="btnRecuperarDatosAction" destination="4ac-oP-eNl" eventType="touchUpInside" id="g0p-G8-Uhd"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vTt-YH-EQX">
+                                <rect key="frame" x="222" y="641" width="71" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="GetAll">
+                                    <color key="baseForegroundColor" red="1" green="0.82371702040000006" blue="0.044569002779999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="SeguesGetAll:" destination="4ac-oP-eNl" eventType="touchUpInside" id="Gww-N1-hDK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hYW-t7-RvH">
+                                <rect key="frame" x="220" y="672" width="80" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="GetAll2">
+                                    <color key="baseForegroundColor" red="1" green="0.82371702040000006" blue="0.044569002779999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="SeguesGetAll:" destination="4ac-oP-eNl" eventType="touchUpInside" id="i3x-mP-CvQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QHI-ms-Vcz">
+                                <rect key="frame" x="217" y="715" width="81" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="GetAll3">
+                                    <color key="baseForegroundColor" red="1" green="0.82371702040000006" blue="0.044569002779999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="SeguesGetAll:" destination="4ac-oP-eNl" eventType="touchUpInside" id="P8F-sm-3Mg"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Fz3-3M-s0H"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="bhu-dk-r7n"/>
                     <connections>
                         <outlet property="txtApellidoPaterno" destination="ebf-RA-rw8" id="Mjo-UM-25x"/>
                         <outlet property="txtNombreOutlet" destination="zNh-NK-aEN" id="7AY-Jl-UP2"/>
+                        <segue destination="1XH-If-SeN" kind="show" identifier="SeguesGetAll" id="pfQ-W0-hre"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pMc-h6-Oez" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1107.2463768115942" y="107.8125"/>
+            <point key="canvasLocation" x="-1920" y="108"/>
         </scene>
         <!--Get All Alumno Controller-->
         <scene sceneID="RGJ-3m-2E6">
@@ -117,10 +168,20 @@
                             <outlet property="delegate" destination="1XH-If-SeN" id="DPQ-3y-OIg"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="Eff-kT-QN9">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="I82-eT-WwG">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="zIG-hr-qOA">
+                                <rect key="frame" x="302" y="5" width="92" height="34.333333333333336"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B5o-K1-kq8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-149" y="91"/>
+            <point key="canvasLocation" x="-1029" y="96"/>
         </scene>
     </scenes>
     <resources>
