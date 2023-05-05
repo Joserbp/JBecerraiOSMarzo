@@ -9,25 +9,36 @@ import UIKit
 import SwipeCellKit
 
 class FormController: UIViewController {
-
-    @IBOutlet weak var BtnOutlet: UIButton!
-    @IBOutlet weak var txtNombreOutlet: UITextField!
+    
+    @IBOutlet weak var txtNombre: UITextField!
+    
+    @IBOutlet weak var txtIdAlumno: UITextField!
+    
     @IBOutlet weak var txtApellidoPaterno: UITextField!
     
-    let dbManager = DBManager()
+    var IdAlumno : Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let result = AlumnoViewModel.GetAll(DbManager: dbManager)
+        print("El valor de IdAlumno es:")
+        print(IdAlumno)
+        
+        if IdAlumno == 0{
+            //Add
+            //Mostrar formulario Vacio
+        }else{
+            //Update
+            //GetByID(IdAlumno)
+            //Mostrar formulario con inf del alumno/Usuario
+        }
     }
     
     @IBAction func btnRecuperarDatosAction() {
         //Interpolación
-        var alumno = Alumno()
-        alumno.Nombre = txtNombreOutlet.text!
+        let alumno = Alumno()
+        alumno.IdAlumno = Int(txtIdAlumno.text!)
+        alumno.Nombre = txtNombre.text!
         alumno.ApellidoPaterno = txtApellidoPaterno.text!
-        
-        AlumnoViewModel.Add(alumno: alumno, DbManager: dbManager)
         
     }
     
@@ -45,13 +56,5 @@ class FormController: UIViewController {
             
         }
     }
-    
-    
-    @IBAction func SeguesGetAll(_ sender: UIButton) {
-        
-        self.performSegue(withIdentifier: "SeguesGetAll", sender: self)
-    }
-    
-    
 }
 

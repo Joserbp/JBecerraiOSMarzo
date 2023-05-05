@@ -12,18 +12,12 @@ import SwipeCellKit
 class GetAllAlumnoController: UITableViewController{
 
     var alumnos : [Alumno] = []
-    
+    var IdAlumno : Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.register(UINib(nibName: "AlumnoCell", bundle: .main), forCellReuseIdentifier: "AlumnoCell") //Registrar mi celda en la vista de tabla que se encuentra en el archivo Main
-        var result = AlumnoViewModel.GetAll()
-        if result.Correct!{
-            for objAlumno in result.Objects!{
-                let alumno = objAlumno as! Alumno //Unboxing
-                alumnos.append(alumno)
-            }
-        }
+        updateUI()
     }
 
     // MARK: - Table view data source
@@ -61,20 +55,45 @@ extension GetAllAlumnoController : SwipeTableViewCellDelegate{
             let deleteAction = SwipeAction(style: .destructive, title: "Delete") { action, indexPath in
                 print(indexPath.row)
                 print("Se ejecuto la funcion de borrar")
-                //CODIGO A EJECUTAR
-                //AlumnoViewModel.Delete(idAlumno : )
+                
+                let result = AlumnoViewModel.Delete(idAlumno : self.alumnos[indexPath.row].IdAlumno!)
+                
+                if result.Correct! {
+                    print("Alumno Elimnado")
+                    self.updateUI()
+                }else{
+                    print("Ocurrio un error")
+                }
             }
             return [deleteAction]
         }
         if orientation == .left {
             let updateAction = SwipeAction(style: .default, title: "Update") { action, indexPath in
-                
-                print("Se ejecuto la funcion de update")
-                //CODIGO A EJECUTAR
-                //AlumnoViewModel.Delete(idAlumno : 2)
+                self.IdAlumno = self.alumnos[indexPath.row].IdAlumno!
+                self.performSegue(withIdentifier: "FormController", sender: self)
             }
             return [updateAction]
         }
         return nil
+    }
+    func updateUI(){
+        var result = AlumnoViewModel.GetAll()
+        alumnos.removeAll()
+        if result.Correct!{
+            for objAlumno in result.Objects!{
+                let alumno = objAlumno as! Alumno
+               alumnos.append(alumno)
+            }
+            tableView.reloadData()
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        //controlar que hacer antes de ir a la siguiente vista
+        if segue.identifier == "FormController"{
+            let formControl = segue.destination as! FormController
+            formControl.IdAlumno = self.IdAlumno
+            
+        }
     }
 }
