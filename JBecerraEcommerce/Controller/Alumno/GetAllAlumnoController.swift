@@ -15,6 +15,7 @@ class GetAllAlumnoController: UITableViewController{
     var IdAlumno : Int = 0
     
     override func viewDidLoad() {
+        print("ViewDidLoad TABLEVIEW")
         super.viewDidLoad()
         tableView.register(UINib(nibName: "AlumnoCell", bundle: .main), forCellReuseIdentifier: "AlumnoCell") //Registrar mi celda en la vista de tabla que se encuentra en el archivo Main
         updateUI()
