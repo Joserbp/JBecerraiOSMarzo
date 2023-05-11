@@ -13,9 +13,40 @@ class GetAllAlumnoController: UITableViewController{
 
     var alumnos : [Alumno] = []
     var IdAlumno : Int = 0
+    /*
+    ViewDidLoad -- Despues de que el controlador se haya cargado
+                -- Vista se cargo en memoria
+                -- La vista esta apunto de aparecer
+                            SOLO SE EJECUTA 1 VEZ
+    ViewWillAppear (No se ejeucta en segundo plano) -- Cuando la vista esta prepara y se va a mostrar
+                -- La vista esta apunto de aparacer
+                            SE EJECUTA CADA QUE SE MUESTRA LA VISTA
+    ViewDidAppear -- Cuando la vista ya se muestra al usuario
+     
+    ViewWillDisappear (No se ejecuta segundo plano) -- Cuando cambia a otra pantalla
+                      -- Antes de desaparecer
+                      -- Cada que la vista desaparece
+                      -- Apunto de ser elimina/Desaperece de la jerarquia
+     
+     ViewDidDisappear -- Cuando la vista ya desaparecio.
+     */
+    override func viewWillAppear(_ animated: Bool) {
+        
+        print("Se ejecuto ViewWillAppear GetAll")
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        print("Se ejecuto ViewDidAppear GetAll")
+        tableView.reloadData()
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        print("Se ejecuto ViewWillDisappear GetAll")
+    }
+    override func viewDidDisappear(_ animated: Bool) {
+        print("Se ejecuto ViewDidDisappear GetAll")
+    }
     
     override func viewDidLoad() {
-        print("ViewDidLoad TABLEVIEW")
+        print("ViewDidLoad GetAll")
         super.viewDidLoad()
         tableView.register(UINib(nibName: "AlumnoCell", bundle: .main), forCellReuseIdentifier: "AlumnoCell") //Registrar mi celda en la vista de tabla que se encuentra en el archivo Main
         updateUI()
@@ -50,6 +81,9 @@ class GetAllAlumnoController: UITableViewController{
 // SWIPE
 extension GetAllAlumnoController : SwipeTableViewCellDelegate{
     
+    //Delegado --Clase que tiene la funcion
+    
+    //Delegador -- Clase que manda a llamar esa función
     func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath, for orientation: SwipeCellKit.SwipeActionsOrientation) -> [SwipeCellKit.SwipeAction]? {
         
         if orientation == .right{
@@ -77,6 +111,7 @@ extension GetAllAlumnoController : SwipeTableViewCellDelegate{
         }
         return nil
     }
+    
     func updateUI(){
         var result = AlumnoViewModel.GetAll()
         alumnos.removeAll()

@@ -45,8 +45,15 @@ class AlumnoViewModel {
                 while sqlite3_step(statement) == SQLITE_ROW {
                     var alumno = Alumno()
                     alumno.IdAlumno = Int(sqlite3_column_int(statement, 0))
-                    alumno.Nombre = String(describing: String(cString: sqlite3_column_text(statement, 1)))
+                    
                     alumno.ApellidoPaterno = String(describing: String(cString: sqlite3_column_text(statement, 2)))
+                    
+                    alumno.Rol = Rol()
+                    
+                    //alumno.Rol?.IdRol = Int(sqlite3_column_int(statement, 3))
+                    
+                    //alumno.Rol?.Nombre = String(describing: String(cString: sqlite3_column_text(statement, 4)))
+                    
                     
                     result.Objects?.append(alumno)
                 }

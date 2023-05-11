@@ -7,6 +7,7 @@
 
 import UIKit
 import SwipeCellKit
+import iOSDropDown
 
 class FormController: UIViewController {
     
@@ -15,16 +16,42 @@ class FormController: UIViewController {
     @IBOutlet weak var btnAction: UIButton!
     @IBOutlet weak var txtIdAlumno: UITextField!
     
+    @IBOutlet weak var txtIdRol: DropDown!
+    
     @IBOutlet weak var txtApellidoPaterno: UITextField!
     
     var IdAlumno : Int = 0
+    var IdRol : Int = 0
+    override func viewWillAppear(_ animated: Bool) {
+        print("Se ejecuto ViewWillAppear Form")
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        print("Se ejecuto ViewDidAppear Form")
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        print("Se ejecuto ViewWillDisappear Form")
+    }
+    override func viewDidDisappear(_ animated: Bool) {
+        print("Se ejecuto ViewDidDisappear Form")
+    }
     
     override func viewDidLoad() {
-        print("ViewDidLoad FORMULARIO")
-        super.viewDidLoad()
-        print("El valor de IdAlumno es:")
-        print(IdAlumno)
         
+        txtIdRol.didSelect { selectedText, index, id in
+            self.IdRol = id
+        }
+        
+        super.viewDidLoad()
+        print("Se ejecuto ViewDidLoad Form")
+        txtIdRol.optionArray = ["User","Adm","Inv"]
+        txtIdRol.optionIds = [1,3,5]
+        /*let resultRol = RolViewModel.GetAll()
+        if resultRol.Correct{
+            for objrol in resultRol.Objects{
+                txtIdRol.optionArray.append(objrol.Nombre)
+                txtIdRol.optionIds?.append(objrol.IdRol)
+            }
+        }*/
         if IdAlumno == 0{
             //Add
             //Mostrar formulario Vacio
@@ -51,7 +78,7 @@ class FormController: UIViewController {
         
         guard txtNombre.text != "" else {
             //label.text = "El campo no puede ser vacio"
-            //txtNombre.  = .red
+            txtNombre.layer.backgroundColor = UIColor.red.cgColor
             return
         }
 
@@ -67,17 +94,11 @@ class FormController: UIViewController {
                 let action = UIAlertAction(title: "Aceptar", style: .default)
                 alert.addAction(action)
                 
-                //alert.show(<#T##vc: UIViewController##UIViewController#>, sender: <#T##Any?#>)
-                //alert.showDetailViewController(<#T##vc: UIViewController##UIViewController#>, sender: <#T##Any?#>)
-                //present(<#T##viewControllerToPresent: UIViewController##UIViewController#>, animated: <#T##Bool#>)
+                
+                present(self, animated: true)
                 
             }
         }
-//        switch opcion{
-//        case "Agregar":
-//            AlumnoViewModel.Add(alumno: <#T##Alumno#>)
-//            break
-//        }
     }
 }
 

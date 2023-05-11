@@ -14,5 +14,12 @@ class Alumno{  //Modelo
     var IdAlumno : Int? = nil
     var Nombre :  String? = nil
     var ApellidoPaterno :  String? = nil
+    
+    //Propiedad Navegación
+    var Rol : Rol? = nil
+}
 
+class Rol {
+    var IdRol : Int? = nil
+    var Nombre : String? = nil
 }
