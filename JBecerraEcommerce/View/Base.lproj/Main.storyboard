@@ -185,7 +185,7 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Actualizar"/>
                                 <connections>
                                     <action selector="ActionButons:" destination="4ac-oP-eNl" eventType="touchUpInside" id="FJi-uE-zpu"/>
-                                    <action selector="btnRecuperarDatosAction" destination="4ac-oP-eNl" eventType="touchUpInside" id="h0E-yj-Ax1"/>
+                                    <action selector="btnRecuperarDatosAction" destination="4ac-oP-eNl" eventType="touchUpInside" id="DbO-ec-cVn"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -199,7 +199,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="bhu-dk-r7n"/>
                     <connections>
-                        <outlet property="btnAction" destination="AuK-nj-YGJ" id="xHk-Qy-hUg"/>
+                        <outlet property="btnAction" destination="AuK-nj-YGJ" id="drX-AG-poh"/>
                         <outlet property="txtApellidoPaterno" destination="ebf-RA-rw8" id="Mjo-UM-25x"/>
                         <outlet property="txtIdAlumno" destination="8in-4f-XAK" id="Mbd-jX-Kai"/>
                         <outlet property="txtIdRol" destination="k83-VF-NhV" id="bOY-Or-Olr"/>

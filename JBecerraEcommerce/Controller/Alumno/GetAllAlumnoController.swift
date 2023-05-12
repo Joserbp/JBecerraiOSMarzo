@@ -32,7 +32,7 @@ class GetAllAlumnoController: UITableViewController{
      */
     override func viewWillAppear(_ animated: Bool) {
         
-        print("Se ejecuto ViewWillAppear GetAll")
+        print("Se ejecuto ViewWillAppear GetAll")   //dsaa
     }
     override func viewDidAppear(_ animated: Bool) {
         print("Se ejecuto ViewDidAppear GetAll")
