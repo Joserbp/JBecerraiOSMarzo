@@ -10,6 +10,7 @@
 		858415E30EB7F8EA80CD9996 /* Pods_JBecerraEcommerce.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 826EAF61867BA5C23CB1EF46 /* Pods_JBecerraEcommerce.framework */; };
 		EB0AE26C2A042F42009F0B21 /* AlumnoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0AE26B2A042F42009F0B21 /* AlumnoViewModel.swift */; };
 		EB1B422C2A0EA97E005C053C /* iOSDropDown.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB1B422A2A0DAE22005C053C /* iOSDropDown.framework */; };
+		EB1B42302A130864005C053C /* Retail.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1B422F2A130864005C053C /* Retail.swift */; };
 		EB21C35E29FAEEA50060A3BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB21C35D29FAEEA50060A3BA /* AppDelegate.swift */; };
 		EB21C36029FAEEA50060A3BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB21C35F29FAEEA50060A3BA /* SceneDelegate.swift */; };
 		EB21C36229FAEEA50060A3BA /* FormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB21C36129FAEEA50060A3BA /* FormController.swift */; };
@@ -31,6 +32,7 @@
 		826EAF61867BA5C23CB1EF46 /* Pods_JBecerraEcommerce.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JBecerraEcommerce.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB0AE26B2A042F42009F0B21 /* AlumnoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlumnoViewModel.swift; sourceTree = "<group>"; };
 		EB1B422A2A0DAE22005C053C /* iOSDropDown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = iOSDropDown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB1B422F2A130864005C053C /* Retail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Retail.swift; sourceTree = "<group>"; };
 		EB21C35A29FAEEA50060A3BA /* JBecerraEcommerce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JBecerraEcommerce.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB21C35D29FAEEA50060A3BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB21C35F29FAEEA50060A3BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 			children = (
 				EB21C37329FC51100060A3BA /* Alumno.swift */,
 				EB21C3752A0177060060A3BA /* Result.swift */,
+				EB1B422F2A130864005C053C /* Retail.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 				EB0AE26C2A042F42009F0B21 /* AlumnoViewModel.swift in Sources */,
 				EB21C3782A02DA230060A3BA /* GetAllAlumnoController.swift in Sources */,
 				EBFC27282A0C041700E72333 /* RolGetAllController.swift in Sources */,
+				EB1B42302A130864005C053C /* Retail.swift in Sources */,
 				EB21C37429FC51100060A3BA /* Alumno.swift in Sources */,
 				EB21C35E29FAEEA50060A3BA /* AppDelegate.swift in Sources */,
 				EB21C36029FAEEA50060A3BA /* SceneDelegate.swift in Sources */,

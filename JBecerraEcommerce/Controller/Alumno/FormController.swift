@@ -13,6 +13,7 @@ class FormController: UIViewController {
     
     @IBOutlet weak var txtNombre: UITextField!
     
+    @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var btnAction: UIButton!
     @IBOutlet weak var txtIdAlumno: UITextField!
     
@@ -22,6 +23,9 @@ class FormController: UIViewController {
     
     var IdAlumno : Int = 0
     var IdRol : Int = 0
+    
+    let imagePickerController = UIImagePickerController()
+    
     override func viewWillAppear(_ animated: Bool) {
         print("Se ejecuto ViewWillAppear Form")
     }
@@ -36,15 +40,23 @@ class FormController: UIViewController {
     }
     
     override func viewDidLoad() {
-        
+        super.viewDidLoad()
+
         txtIdRol.didSelect { selectedText, index, id in
             self.IdRol = id
         }
         
-        super.viewDidLoad()
+        //Image delegate
+        imagePickerController.delegate = self
+        imagePickerController.sourceType = .photoLibrary
+        imagePickerController.isEditing = false
+        //
+        self.txtNombre.delegate = self
+        txtApellidoPaterno.delegate = self
+        
         print("Se ejecuto ViewDidLoad Form")
         txtIdRol.optionArray = ["User","Adm","Inv"]
-        txtIdRol.optionIds = [1,3,5]
+        txtIdRol.optionIds = [1,2,3]
         /*let resultRol = RolViewModel.GetAll()
         if resultRol.Correct{
             for objrol in resultRol.Objects{
@@ -74,6 +86,10 @@ class FormController: UIViewController {
         alumno.ApellidoPaterno = txtApellidoPaterno.text!
     }
     
+    @IBAction func openPickerImage() {
+        self.present(imagePickerController, animated: true)
+    }
+    
     @IBAction func ActionButons(_ sender: UIButton) {
         
         guard txtNombre.text != "" else {
@@ -82,6 +98,8 @@ class FormController: UIViewController {
             return
         }
 
+        let imagen = imageView.image
+        alumno.image = convertToBase64(imagen)//Convertir a base 64
         guard txtApellidoPaterno.text != "" else {
             fatalError("El apellido es nulo")
         }
@@ -102,3 +120,33 @@ class FormController: UIViewController {
     }
 }
 
+// MARK: UITextFieldDelegate
+extension FormController : UITextFieldDelegate {
+    
+    func textFieldShouldClear(_ textField: UITextField) -> Bool {
+        //CODIGO
+        return true
+    }
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        if textField.text == "" {
+        }
+    }
+}
+
+// MARK: ImageView
+extension FormController : UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+
+        let data = info[.originalImage]
+        self.imageView.image = info[.originalImage] as! UIImage
+        
+        dismiss(animated: true)
+    }
+    func convertToBase64 (imagen : UIImage) -> String{
+        let base64 = ""
+        //PROCESO
+        return base64
+    }
+    
+}
