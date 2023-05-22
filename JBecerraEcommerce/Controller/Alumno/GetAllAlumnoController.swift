@@ -75,12 +75,12 @@ class GetAllAlumnoController: UITableViewController{
         cell.txtNombre.text = alumnos[indexPath.row].Nombre
         cell.txtApellidoPaterno.text = alumnos[indexPath.row].ApellidoPaterno
         //Image
-        if alumnos[indexPath.row].Imagen == "" || alumnos[indexPath.row].Imagen == nil {
-            cell.Imageview.image = UIImage(named: "DefaultAlumno")
-        }else{
-            let imagenData : Data = //Proceso inverso de base64 a Data
-            cell.imageView.image = UIImage(data: imagenData)
-        }
+        //if alumnos[indexPath.row].Imagen == "" || alumnos[indexPath.row].Imagen == nil {
+        //    cell.Imageview.image = UIImage(named: "DefaultAlumno")
+        //}else{
+        //    let imagenData : Data = //Proceso inverso de base64 a Data
+          //  cell.imageView.image = UIImage(data: imagenData)
+        //}
         
         
         

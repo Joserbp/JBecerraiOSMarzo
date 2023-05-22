@@ -99,7 +99,7 @@ class FormController: UIViewController {
         }
 
         let imagen = imageView.image
-        alumno.image = convertToBase64(imagen: imagen)//Convertir a base 64
+        //alumno.image = convertToBase64(imagen: imagen)//Convertir a base 64
         guard txtApellidoPaterno.text != "" else {
             fatalError("El apellido es nulo")
         }
