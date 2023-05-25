@@ -44,9 +44,6 @@ class LoginController: UIViewController {
                 //Alert
                 return
             }
-            if let correct = authResult{
-                self?.performSegue(withIdentifier: <#T##String#>, sender: <#T##Any?#>)
-            }
             
             
         }

@@ -7,7 +7,7 @@
 import SQLite3
 import Foundation
 
-class AlumnoViewModel {
+open class AlumnoViewModel {
     static func Add(alumno: Alumno) -> Result{
         let context = DBManager()
         let result = Result()
@@ -68,8 +68,9 @@ class AlumnoViewModel {
             result.ErrorMessage = ex.localizedDescription //Ex.Message
             result.Ex = ex
         }
-        sqlite3_close(context.db)
         sqlite3_finalize(statement)
+        sqlite3_close(context.db)
+
         return result
     }
     static func Update(alumno: Alumno) -> Result{
@@ -139,8 +140,8 @@ class AlumnoViewModel {
             result.ErrorMessage = ex.localizedDescription //Ex.Message
             result.Ex = ex
         }
-        sqlite3_close(context.db)
         sqlite3_finalize(statement)
+        sqlite3_close(context.db)
         return result
     }
 }

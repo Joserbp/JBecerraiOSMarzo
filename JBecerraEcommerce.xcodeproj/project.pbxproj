@@ -28,6 +28,22 @@
 		EB6F1C4A2A1BDDD300247DD0 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = EB6F1C492A1BDDD300247DD0 /* FirebaseStorage */; };
 		EB6F1C4C2A1BE31800247DD0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB6F1C4B2A1BE31800247DD0 /* GoogleService-Info.plist */; };
 		EB6F1C4E2A1BE64A00247DD0 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6F1C4D2A1BE64A00247DD0 /* LoginController.swift */; };
+		EB6F1C562A1D302200247DD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6F1C552A1D302200247DD0 /* AppDelegate.swift */; };
+		EB6F1C582A1D302200247DD0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6F1C572A1D302200247DD0 /* SceneDelegate.swift */; };
+		EB6F1C5A2A1D302200247DD0 /* GetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6F1C592A1D302200247DD0 /* GetController.swift */; };
+		EB6F1C5D2A1D302200247DD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB6F1C5B2A1D302200247DD0 /* Main.storyboard */; };
+		EB6F1C5F2A1D302400247DD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB6F1C5E2A1D302400247DD0 /* Assets.xcassets */; };
+		EB6F1C622A1D302400247DD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB6F1C602A1D302400247DD0 /* LaunchScreen.storyboard */; };
+		EB6F1C672A1D324B00247DD0 /* AlumnoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0AE26B2A042F42009F0B21 /* AlumnoViewModel.swift */; };
+		EB6F1C682A1D326800247DD0 /* Alumno.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB21C37329FC51100060A3BA /* Alumno.swift */; };
+		EB6F1C692A1D329D00247DD0 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB21C3752A0177060060A3BA /* Result.swift */; };
+		EB6F1C6A2A1D32C900247DD0 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB21C37129FC50120060A3BA /* DBManager.swift */; };
+		EB6F1C702A1D869C00247DD0 /* TestViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6F1C6E2A1D869C00247DD0 /* TestViewCell.swift */; };
+		EB6F1C712A1D869C00247DD0 /* TestViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB6F1C6F2A1D869C00247DD0 /* TestViewCell.xib */; };
+		EB6F1C742A1FD9E600247DD0 /* RolController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6F1C732A1FD9E600247DD0 /* RolController.swift */; };
+		EB6F1C762A1FDBB200247DD0 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = EB6F1C752A1FDBB200247DD0 /* FirebaseAuth */; };
+		EB6F1C7B2A1FDE3900247DD0 /* JBecerraEcommerce.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EB6F1C792A1FDE3900247DD0 /* JBecerraEcommerce.xcdatamodeld */; };
+		EB6F1C7D2A1FE29D00247DD0 /* VentaProductoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6F1C7C2A1FE29D00247DD0 /* VentaProductoViewModel.swift */; };
 		EBFC27282A0C041700E72333 /* RolGetAllController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFC27272A0C041700E72333 /* RolGetAllController.swift */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +70,22 @@
 		EB21C37A2A02E4FB0060A3BA /* AlumnoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlumnoCell.xib; sourceTree = "<group>"; };
 		EB6F1C4B2A1BE31800247DD0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EB6F1C4D2A1BE64A00247DD0 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		EB6F1C532A1D302200247DD0 /* JBecerraEcommerceVenta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JBecerraEcommerceVenta.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB6F1C552A1D302200247DD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EB6F1C572A1D302200247DD0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EB6F1C592A1D302200247DD0 /* GetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetController.swift; sourceTree = "<group>"; };
+		EB6F1C5C2A1D302200247DD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EB6F1C5E2A1D302400247DD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EB6F1C612A1D302400247DD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EB6F1C632A1D302400247DD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB6F1C6C2A1D47A800247DD0 /* JBecerraEcommerceDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JBecerraEcommerceDebug.entitlements; sourceTree = "<group>"; };
+		EB6F1C6D2A1D4A8100247DD0 /* JBecerraEcommerceVentaDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JBecerraEcommerceVentaDebug.entitlements; sourceTree = "<group>"; };
+		EB6F1C6E2A1D869C00247DD0 /* TestViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewCell.swift; sourceTree = "<group>"; };
+		EB6F1C6F2A1D869C00247DD0 /* TestViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestViewCell.xib; sourceTree = "<group>"; };
+		EB6F1C732A1FD9E600247DD0 /* RolController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RolController.swift; sourceTree = "<group>"; };
+		EB6F1C772A1FDBCB00247DD0 /* iOSDropDown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = iOSDropDown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB6F1C7A2A1FDE3900247DD0 /* JBecerraEcommerce.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = JBecerraEcommerce.xcdatamodel; sourceTree = "<group>"; };
+		EB6F1C7C2A1FE29D00247DD0 /* VentaProductoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VentaProductoViewModel.swift; sourceTree = "<group>"; };
 		EBF767EC2A0DAA1F006E8478 /* DropDown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DropDown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBFC27272A0C041700E72333 /* RolGetAllController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RolGetAllController.swift; sourceTree = "<group>"; };
 		EBFC27292A0DA7C800E72333 /* DropDown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DropDown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,6 +104,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EB6F1C502A1D302200247DD0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB6F1C762A1FDBB200247DD0 /* FirebaseAuth in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -87,6 +127,7 @@
 		86FB391997CECEBFF9CAA32F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EB6F1C772A1FDBCB00247DD0 /* iOSDropDown.framework */,
 				EB1B422A2A0DAE22005C053C /* iOSDropDown.framework */,
 				EBF767EC2A0DAA1F006E8478 /* DropDown.framework */,
 				EBFC27292A0DA7C800E72333 /* DropDown.framework */,
@@ -111,6 +152,8 @@
 				EB0AE26D2A042FD5009F0B21 /* Alumno */,
 				EB21C36329FAEEA50060A3BA /* Main.storyboard */,
 				EB21C36829FAEEA70060A3BA /* LaunchScreen.storyboard */,
+				EB6F1C6E2A1D869C00247DD0 /* TestViewCell.swift */,
+				EB6F1C6F2A1D869C00247DD0 /* TestViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -161,9 +204,11 @@
 		EB21C35129FAEEA50060A3BA = {
 			isa = PBXGroup;
 			children = (
+				EB6F1C792A1FDE3900247DD0 /* JBecerraEcommerce.xcdatamodeld */,
 				EB6F1C4D2A1BE64A00247DD0 /* LoginController.swift */,
 				EB6F1C4B2A1BE31800247DD0 /* GoogleService-Info.plist */,
 				EB21C35C29FAEEA50060A3BA /* JBecerraEcommerce */,
+				EB6F1C542A1D302200247DD0 /* JBecerraEcommerceVenta */,
 				EB21C35B29FAEEA50060A3BA /* Products */,
 				523FBFD10DA2560204D8A4AA /* Pods */,
 				86FB391997CECEBFF9CAA32F /* Frameworks */,
@@ -174,6 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				EB21C35A29FAEEA50060A3BA /* JBecerraEcommerce.app */,
+				EB6F1C532A1D302200247DD0 /* JBecerraEcommerceVenta.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -181,6 +227,7 @@
 		EB21C35C29FAEEA50060A3BA /* JBecerraEcommerce */ = {
 			isa = PBXGroup;
 			children = (
+				EB6F1C6C2A1D47A800247DD0 /* JBecerraEcommerceDebug.entitlements */,
 				EB0AE26A2A042EBC009F0B21 /* Util */,
 				EB0AE2692A042E46009F0B21 /* Controller */,
 				EB0AE2682A042E35009F0B21 /* ViewModel */,
@@ -192,6 +239,31 @@
 				EB21C36B29FAEEA70060A3BA /* Info.plist */,
 			);
 			path = JBecerraEcommerce;
+			sourceTree = "<group>";
+		};
+		EB6F1C542A1D302200247DD0 /* JBecerraEcommerceVenta */ = {
+			isa = PBXGroup;
+			children = (
+				EB6F1C722A1FD9B100247DD0 /* RolGetAllControllerRolGetAllController */,
+				EB6F1C6D2A1D4A8100247DD0 /* JBecerraEcommerceVentaDebug.entitlements */,
+				EB6F1C552A1D302200247DD0 /* AppDelegate.swift */,
+				EB6F1C572A1D302200247DD0 /* SceneDelegate.swift */,
+				EB6F1C592A1D302200247DD0 /* GetController.swift */,
+				EB6F1C5B2A1D302200247DD0 /* Main.storyboard */,
+				EB6F1C5E2A1D302400247DD0 /* Assets.xcassets */,
+				EB6F1C602A1D302400247DD0 /* LaunchScreen.storyboard */,
+				EB6F1C632A1D302400247DD0 /* Info.plist */,
+				EB6F1C7C2A1FE29D00247DD0 /* VentaProductoViewModel.swift */,
+			);
+			path = JBecerraEcommerceVenta;
+			sourceTree = "<group>";
+		};
+		EB6F1C722A1FD9B100247DD0 /* RolGetAllControllerRolGetAllController */ = {
+			isa = PBXGroup;
+			children = (
+				EB6F1C732A1FD9E600247DD0 /* RolController.swift */,
+			);
+			path = RolGetAllControllerRolGetAllController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +293,26 @@
 			productReference = EB21C35A29FAEEA50060A3BA /* JBecerraEcommerce.app */;
 			productType = "com.apple.product-type.application";
 		};
+		EB6F1C522A1D302200247DD0 /* JBecerraEcommerceVenta */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB6F1C662A1D302400247DD0 /* Build configuration list for PBXNativeTarget "JBecerraEcommerceVenta" */;
+			buildPhases = (
+				EB6F1C4F2A1D302200247DD0 /* Sources */,
+				EB6F1C502A1D302200247DD0 /* Frameworks */,
+				EB6F1C512A1D302200247DD0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JBecerraEcommerceVenta;
+			packageProductDependencies = (
+				EB6F1C752A1FDBB200247DD0 /* FirebaseAuth */,
+			);
+			productName = JBecerraEcommerceVenta;
+			productReference = EB6F1C532A1D302200247DD0 /* JBecerraEcommerceVenta.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -228,11 +320,14 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1420;
+				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
 					EB21C35929FAEEA50060A3BA = {
 						CreatedOnToolsVersion = 14.2;
+					};
+					EB6F1C522A1D302200247DD0 = {
+						CreatedOnToolsVersion = 14.3;
 					};
 				};
 			};
@@ -253,6 +348,7 @@
 			projectRoot = "";
 			targets = (
 				EB21C35929FAEEA50060A3BA /* JBecerraEcommerce */,
+				EB6F1C522A1D302200247DD0 /* JBecerraEcommerceVenta */,
 			);
 		};
 /* End PBXProject section */
@@ -266,7 +362,18 @@
 				EB21C36729FAEEA70060A3BA /* Assets.xcassets in Resources */,
 				EB6F1C4C2A1BE31800247DD0 /* GoogleService-Info.plist in Resources */,
 				EB21C36529FAEEA50060A3BA /* Main.storyboard in Resources */,
+				EB6F1C712A1D869C00247DD0 /* TestViewCell.xib in Resources */,
 				EB21C37C2A02E4FB0060A3BA /* AlumnoCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB6F1C512A1D302200247DD0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB6F1C622A1D302400247DD0 /* LaunchScreen.storyboard in Resources */,
+				EB6F1C5F2A1D302400247DD0 /* Assets.xcassets in Resources */,
+				EB6F1C5D2A1D302200247DD0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +431,7 @@
 				EB21C36229FAEEA50060A3BA /* FormController.swift in Sources */,
 				EB0AE26C2A042F42009F0B21 /* AlumnoViewModel.swift in Sources */,
 				EB21C3782A02DA230060A3BA /* GetAllAlumnoController.swift in Sources */,
+				EB6F1C702A1D869C00247DD0 /* TestViewCell.swift in Sources */,
 				EBFC27282A0C041700E72333 /* RolGetAllController.swift in Sources */,
 				EB1B42302A130864005C053C /* Retail.swift in Sources */,
 				EB21C37429FC51100060A3BA /* Alumno.swift in Sources */,
@@ -331,6 +439,23 @@
 				EB21C36029FAEEA50060A3BA /* SceneDelegate.swift in Sources */,
 				EB21C37229FC50120060A3BA /* DBManager.swift in Sources */,
 				EB21C37B2A02E4FB0060A3BA /* AlumnoCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB6F1C4F2A1D302200247DD0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB6F1C6A2A1D32C900247DD0 /* DBManager.swift in Sources */,
+				EB6F1C692A1D329D00247DD0 /* Result.swift in Sources */,
+				EB6F1C682A1D326800247DD0 /* Alumno.swift in Sources */,
+				EB6F1C672A1D324B00247DD0 /* AlumnoViewModel.swift in Sources */,
+				EB6F1C5A2A1D302200247DD0 /* GetController.swift in Sources */,
+				EB6F1C562A1D302200247DD0 /* AppDelegate.swift in Sources */,
+				EB6F1C7B2A1FDE3900247DD0 /* JBecerraEcommerce.xcdatamodeld in Sources */,
+				EB6F1C582A1D302200247DD0 /* SceneDelegate.swift in Sources */,
+				EB6F1C742A1FD9E600247DD0 /* RolController.swift in Sources */,
+				EB6F1C7D2A1FE29D00247DD0 /* VentaProductoViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,6 +474,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				EB21C36929FAEEA70060A3BA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		EB6F1C5B2A1D302200247DD0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB6F1C5C2A1D302200247DD0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EB6F1C602A1D302400247DD0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB6F1C612A1D302400247DD0 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -476,6 +617,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = JBecerraEcommerce/JBecerraEcommerceDebug.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = C7W26WRUNK;
@@ -532,6 +674,65 @@
 			};
 			name = Release;
 		};
+		EB6F1C642A1D302400247DD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = JBecerraEcommerceVenta/JBecerraEcommerceVentaDebug.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C7W26WRUNK;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JBecerraEcommerceVenta/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.digis.JBecerraEcommerceVenta;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EB6F1C652A1D302400247DD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C7W26WRUNK;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JBecerraEcommerceVenta/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.digis.JBecerraEcommerceVenta;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -549,6 +750,15 @@
 			buildConfigurations = (
 				EB21C36F29FAEEA70060A3BA /* Debug */,
 				EB21C37029FAEEA70060A3BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB6F1C662A1D302400247DD0 /* Build configuration list for PBXNativeTarget "JBecerraEcommerceVenta" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB6F1C642A1D302400247DD0 /* Debug */,
+				EB6F1C652A1D302400247DD0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -582,7 +792,25 @@
 			package = EB6F1C442A1BDDD300247DD0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseStorage;
 		};
+		EB6F1C752A1FDBB200247DD0 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EB6F1C442A1BDDD300247DD0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		EB6F1C792A1FDE3900247DD0 /* JBecerraEcommerce.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EB6F1C7A2A1FDE3900247DD0 /* JBecerraEcommerce.xcdatamodel */,
+			);
+			currentVersion = EB6F1C7A2A1FDE3900247DD0 /* JBecerraEcommerce.xcdatamodel */;
+			path = JBecerraEcommerce.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = EB21C35229FAEEA50060A3BA /* Project object */;
 }

@@ -104,6 +104,9 @@ class FormController: UIViewController {
             fatalError("El apellido es nulo")
         }
         let alumno = Alumno()//No crearlo
+        alumno.IdAlumno = Int(txtIdAlumno.text!)
+        alumno.Nombre = txtNombre.text!
+        alumno.ApellidoPaterno = txtApellidoPaterno.text!
         let opcion = btnAction.titleLabel?.text
         if opcion == "Agregar"{
             let result = AlumnoViewModel.Add(alumno: alumno)
