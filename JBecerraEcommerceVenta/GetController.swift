@@ -7,35 +7,52 @@
 
 import UIKit
 
-class GetController: UITableViewController {
-
+class GetController: UICollectionViewController {
+    
+    let carritoViewModel = CarritoViewModel()
     var data : [Alumno] = []
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+        collectionView.register(UINib(nibName: "VentaCollectionViewCell", bundle: .main), forCellWithReuseIdentifier: "ventaCell")
         
         let result = AlumnoViewModel.GetAll()
         if result.Correct! {
             for objAlumno in result.Objects! {
                 data.append(objAlumno as! Alumno)
             }
-            tableView.reloadData()
+            collectionView.reloadData()
         }
         
     }
-    
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        1
+    override func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
     }
     
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        data.count
+    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return data.count
     }
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "prototype", for: indexPath)
-        cell.textLabel?.text = data[indexPath.row].ApellidoPaterno
+    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ventaCell", for: indexPath) as! VentaCollectionViewCell
+        cell.IdTxt.text = String(data[indexPath.row].IdAlumno!)
+        cell.nombreTxt.text =  data[indexPath.row].ApellidoPaterno
+        
+        cell.btnAdd.tag = indexPath.row
+        cell.btnAdd.addTarget(self, action: #selector(AddCarrito), for: .touchUpInside)
         return cell
+    }
+    
+    @objc func AddCarrito(sender : UIButton){
+        let idAlumno = data[sender.tag].IdAlumno!
+        
+        let result = carritoViewModel.Add(idAlumno)
+        if result.Correct! {
+            //Alert
+        }else{
+            //Alert
+        }
+        carritoViewModel.GetAll()
     }
 }
 

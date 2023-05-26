@@ -44,6 +44,10 @@
 		EB6F1C762A1FDBB200247DD0 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = EB6F1C752A1FDBB200247DD0 /* FirebaseAuth */; };
 		EB6F1C7B2A1FDE3900247DD0 /* JBecerraEcommerce.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EB6F1C792A1FDE3900247DD0 /* JBecerraEcommerce.xcdatamodeld */; };
 		EB6F1C7D2A1FE29D00247DD0 /* VentaProductoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6F1C7C2A1FE29D00247DD0 /* VentaProductoViewModel.swift */; };
+		EBE0BA822A212CC8004F2A5A /* VentaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE0BA802A212CC8004F2A5A /* VentaCollectionViewCell.swift */; };
+		EBE0BA832A212CC8004F2A5A /* VentaCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBE0BA812A212CC8004F2A5A /* VentaCollectionViewCell.xib */; };
+		EBE0BA852A21342E004F2A5A /* CarritoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE0BA842A21342E004F2A5A /* CarritoViewModel.swift */; };
+		EBE0BA862A213516004F2A5A /* CarritoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE0BA842A21342E004F2A5A /* CarritoViewModel.swift */; };
 		EBFC27282A0C041700E72333 /* RolGetAllController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFC27272A0C041700E72333 /* RolGetAllController.swift */; };
 /* End PBXBuildFile section */
 
@@ -86,6 +90,9 @@
 		EB6F1C772A1FDBCB00247DD0 /* iOSDropDown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = iOSDropDown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB6F1C7A2A1FDE3900247DD0 /* JBecerraEcommerce.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = JBecerraEcommerce.xcdatamodel; sourceTree = "<group>"; };
 		EB6F1C7C2A1FE29D00247DD0 /* VentaProductoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VentaProductoViewModel.swift; sourceTree = "<group>"; };
+		EBE0BA802A212CC8004F2A5A /* VentaCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VentaCollectionViewCell.swift; sourceTree = "<group>"; };
+		EBE0BA812A212CC8004F2A5A /* VentaCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VentaCollectionViewCell.xib; sourceTree = "<group>"; };
+		EBE0BA842A21342E004F2A5A /* CarritoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarritoViewModel.swift; sourceTree = "<group>"; };
 		EBF767EC2A0DAA1F006E8478 /* DropDown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DropDown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBFC27272A0C041700E72333 /* RolGetAllController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RolGetAllController.swift; sourceTree = "<group>"; };
 		EBFC27292A0DA7C800E72333 /* DropDown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DropDown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -162,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				EB0AE26B2A042F42009F0B21 /* AlumnoViewModel.swift */,
+				EBE0BA842A21342E004F2A5A /* CarritoViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -262,6 +270,8 @@
 			isa = PBXGroup;
 			children = (
 				EB6F1C732A1FD9E600247DD0 /* RolController.swift */,
+				EBE0BA802A212CC8004F2A5A /* VentaCollectionViewCell.swift */,
+				EBE0BA812A212CC8004F2A5A /* VentaCollectionViewCell.xib */,
 			);
 			path = RolGetAllControllerRolGetAllController;
 			sourceTree = "<group>";
@@ -372,6 +382,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB6F1C622A1D302400247DD0 /* LaunchScreen.storyboard in Resources */,
+				EBE0BA832A212CC8004F2A5A /* VentaCollectionViewCell.xib in Resources */,
 				EB6F1C5F2A1D302400247DD0 /* Assets.xcassets in Resources */,
 				EB6F1C5D2A1D302200247DD0 /* Main.storyboard in Resources */,
 			);
@@ -435,6 +446,7 @@
 				EBFC27282A0C041700E72333 /* RolGetAllController.swift in Sources */,
 				EB1B42302A130864005C053C /* Retail.swift in Sources */,
 				EB21C37429FC51100060A3BA /* Alumno.swift in Sources */,
+				EBE0BA852A21342E004F2A5A /* CarritoViewModel.swift in Sources */,
 				EB21C35E29FAEEA50060A3BA /* AppDelegate.swift in Sources */,
 				EB21C36029FAEEA50060A3BA /* SceneDelegate.swift in Sources */,
 				EB21C37229FC50120060A3BA /* DBManager.swift in Sources */,
@@ -446,7 +458,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBE0BA862A213516004F2A5A /* CarritoViewModel.swift in Sources */,
 				EB6F1C6A2A1D32C900247DD0 /* DBManager.swift in Sources */,
+				EBE0BA822A212CC8004F2A5A /* VentaCollectionViewCell.swift in Sources */,
 				EB6F1C692A1D329D00247DD0 /* Result.swift in Sources */,
 				EB6F1C682A1D326800247DD0 /* Alumno.swift in Sources */,
 				EB6F1C672A1D324B00247DD0 /* AlumnoViewModel.swift in Sources */,

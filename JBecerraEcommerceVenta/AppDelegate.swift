@@ -18,6 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 fatalError("Unable to load persistent stores: \(error)")
                 //Propio error
             }
+            print("Conexion exitosa CoreData")
         }
         return container
     }()
