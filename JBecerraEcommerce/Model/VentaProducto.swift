@@ -7,7 +7,7 @@
 
 import Foundation
 
-class VentaProducto{
+class VentaProductos{
     var alumno : Alumno? = nil
     var cantidad : Int? = nil
 }

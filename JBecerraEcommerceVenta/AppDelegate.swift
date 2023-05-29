@@ -20,6 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
             print("Conexion exitosa CoreData")
         }
+        print("CoreData: \(container.persistentStoreDescriptions.first?.url)")
         return container
     }()
     

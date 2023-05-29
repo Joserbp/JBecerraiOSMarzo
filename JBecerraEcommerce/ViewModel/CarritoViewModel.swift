@@ -37,14 +37,32 @@ class CarritoViewModel{
         
         return result
     }
-    func Update(IdAlumno : Int){
-        
+    func UpdateCantidad(IdAlumno : Int){
+        //GetByid
+        //Update para Sumar la cantidad
     }
     func Delete(IdAlumno : Int){
         
     }
     func GetById(IdAlumno : Int){
+        let context = appDelegate.persistentContainer.viewContext
+        let response = NSFetchRequest<NSFetchRequestResult>(entityName: "VentaProducto")
         
+        //let predicate = NSPredicate(format: "idProducto = %@", String(IdAlumno))
+        
+        let predicate = NSPredicate(format: "idProducto = %i", IdAlumno)
+        
+        response.predicate = predicate
+        do{
+            let resolve = try context.fetch(response)
+            let obj = resolve.first as! NSManagedObject
+            print(obj.objectID)
+            print(obj.value(forKey: "cantidad") as Any)
+            
+        }
+        catch let error{
+            print(error.localizedDescription)
+        }
     }
     func GetAll() -> Result{
         var result = Result()
@@ -56,7 +74,7 @@ class CarritoViewModel{
         do{
             let resultFetch = try context.fetch(response)
             for obj in resultFetch as! [NSManagedObject]{
-                let ventaProducto = VentaProducto()
+                let ventaProducto = VentaProductos()
                 
                 ventaProducto.alumno = Alumno()
                 ventaProducto.alumno?.IdAlumno = obj.value(forKey: "idProducto") as! Int

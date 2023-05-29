@@ -52,7 +52,8 @@ class GetController: UICollectionViewController {
         }else{
             //Alert
         }
-        carritoViewModel.GetAll()
+ //       carritoViewModel.GetAll()
+        carritoViewModel.GetById(IdAlumno: idAlumno)
     }
 }
 
