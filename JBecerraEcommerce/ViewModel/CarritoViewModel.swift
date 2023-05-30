@@ -44,7 +44,8 @@ class CarritoViewModel{
     func Delete(IdAlumno : Int){
         
     }
-    func GetById(IdAlumno : Int){
+    func GetById(IdAlumno : Int) -> Result{
+        var result = Result()
         let context = appDelegate.persistentContainer.viewContext
         let response = NSFetchRequest<NSFetchRequestResult>(entityName: "VentaProducto")
         
@@ -58,11 +59,13 @@ class CarritoViewModel{
             let obj = resolve.first as! NSManagedObject
             print(obj.objectID)
             print(obj.value(forKey: "cantidad") as Any)
-            
+            result.Correct = true
         }
         catch let error{
             print(error.localizedDescription)
+            result.Correct = false
         }
+        return result
     }
     func GetAll() -> Result{
         var result = Result()
@@ -79,19 +82,12 @@ class CarritoViewModel{
                 ventaProducto.alumno = Alumno()
                 ventaProducto.alumno?.IdAlumno = obj.value(forKey: "idProducto") as! Int
                 ventaProducto.cantidad = obj.value(forKey: "cantidad") as! Int
-                let resultGetById = AlumnoViewModel.GetById(idAlumno:ventaProducto.alumno?.IdAlumno as! Int)
-                if resultGetById.Correct! {
-                    let alumno = result.Object! as! Alumno
-                    
-                    ventaProducto.alumno?.Nombre = alumno.Nombre
-                    ventaProducto.alumno?.ApellidoPaterno = alumno.ApellidoPaterno
-                    
-                }
+                
                 result.Objects?.append(ventaProducto)
-                
-                
-                
             }
+               
+            result.Correct = false
+    
         }
         catch let error {
             result.Correct = false

@@ -52,8 +52,28 @@
 		EBE0BAC42A218105004F2A5A /* VentaProducto.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE0BAC32A218105004F2A5A /* VentaProducto.swift */; };
 		EBE0BAC52A2181A6004F2A5A /* VentaProducto.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE0BAC32A218105004F2A5A /* VentaProducto.swift */; };
 		EBE0BAC72A25128F004F2A5A /* SwipeCellKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBE0BAC62A25128F004F2A5A /* SwipeCellKit.framework */; };
+		EBE0BACF2A256F81004F2A5A /* JBecerraEcommerceVentaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE0BACE2A256F81004F2A5A /* JBecerraEcommerceVentaTests.swift */; };
+		EBE0BADC2A267F8E004F2A5A /* JBecerraEcommerceVentaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE0BADB2A267F8E004F2A5A /* JBecerraEcommerceVentaUITests.swift */; };
+		EBE0BADE2A267F8E004F2A5A /* JBecerraEcommerceVentaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE0BADD2A267F8E004F2A5A /* JBecerraEcommerceVentaUITestsLaunchTests.swift */; };
 		EBFC27282A0C041700E72333 /* RolGetAllController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFC27272A0C041700E72333 /* RolGetAllController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EBE0BAD02A256F81004F2A5A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB21C35229FAEEA50060A3BA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB6F1C522A1D302200247DD0;
+			remoteInfo = JBecerraEcommerceVenta;
+		};
+		EBE0BADF2A267F8E004F2A5A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB21C35229FAEEA50060A3BA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB6F1C522A1D302200247DD0;
+			remoteInfo = JBecerraEcommerceVenta;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1786B2297990054535AD0FEE /* Pods-JBecerraEcommerceVenta.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JBecerraEcommerceVenta.release.xcconfig"; path = "Target Support Files/Pods-JBecerraEcommerceVenta/Pods-JBecerraEcommerceVenta.release.xcconfig"; sourceTree = "<group>"; };
@@ -102,6 +122,11 @@
 		EBE0BA842A21342E004F2A5A /* CarritoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarritoViewModel.swift; sourceTree = "<group>"; };
 		EBE0BAC32A218105004F2A5A /* VentaProducto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VentaProducto.swift; sourceTree = "<group>"; };
 		EBE0BAC62A25128F004F2A5A /* SwipeCellKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwipeCellKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBE0BACC2A256F81004F2A5A /* JBecerraEcommerceVentaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JBecerraEcommerceVentaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBE0BACE2A256F81004F2A5A /* JBecerraEcommerceVentaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JBecerraEcommerceVentaTests.swift; sourceTree = "<group>"; };
+		EBE0BAD92A267F8E004F2A5A /* JBecerraEcommerceVentaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JBecerraEcommerceVentaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBE0BADB2A267F8E004F2A5A /* JBecerraEcommerceVentaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JBecerraEcommerceVentaUITests.swift; sourceTree = "<group>"; };
+		EBE0BADD2A267F8E004F2A5A /* JBecerraEcommerceVentaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JBecerraEcommerceVentaUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		EBF767EC2A0DAA1F006E8478 /* DropDown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DropDown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBFC27272A0C041700E72333 /* RolGetAllController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RolGetAllController.swift; sourceTree = "<group>"; };
 		EBFC27292A0DA7C800E72333 /* DropDown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DropDown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -127,6 +152,20 @@
 				EBE0BAC72A25128F004F2A5A /* SwipeCellKit.framework in Frameworks */,
 				EB6F1C762A1FDBB200247DD0 /* FirebaseAuth in Frameworks */,
 				6E949FFE517F48F0B937EA23 /* Pods_JBecerraEcommerceVenta.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBE0BAC92A256F81004F2A5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBE0BAD62A267F8E004F2A5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +271,8 @@
 				EB6F1C4B2A1BE31800247DD0 /* GoogleService-Info.plist */,
 				EB21C35C29FAEEA50060A3BA /* JBecerraEcommerce */,
 				EB6F1C542A1D302200247DD0 /* JBecerraEcommerceVenta */,
+				EBE0BACD2A256F81004F2A5A /* JBecerraEcommerceVentaTests */,
+				EBE0BADA2A267F8E004F2A5A /* JBecerraEcommerceVentaUITests */,
 				EB21C35B29FAEEA50060A3BA /* Products */,
 				523FBFD10DA2560204D8A4AA /* Pods */,
 				86FB391997CECEBFF9CAA32F /* Frameworks */,
@@ -243,6 +284,8 @@
 			children = (
 				EB21C35A29FAEEA50060A3BA /* JBecerraEcommerce.app */,
 				EB6F1C532A1D302200247DD0 /* JBecerraEcommerceVenta.app */,
+				EBE0BACC2A256F81004F2A5A /* JBecerraEcommerceVentaTests.xctest */,
+				EBE0BAD92A267F8E004F2A5A /* JBecerraEcommerceVentaUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -290,6 +333,23 @@
 				EBE0BA812A212CC8004F2A5A /* VentaCollectionViewCell.xib */,
 			);
 			path = RolGetAllControllerRolGetAllController;
+			sourceTree = "<group>";
+		};
+		EBE0BACD2A256F81004F2A5A /* JBecerraEcommerceVentaTests */ = {
+			isa = PBXGroup;
+			children = (
+				EBE0BACE2A256F81004F2A5A /* JBecerraEcommerceVentaTests.swift */,
+			);
+			path = JBecerraEcommerceVentaTests;
+			sourceTree = "<group>";
+		};
+		EBE0BADA2A267F8E004F2A5A /* JBecerraEcommerceVentaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EBE0BADB2A267F8E004F2A5A /* JBecerraEcommerceVentaUITests.swift */,
+				EBE0BADD2A267F8E004F2A5A /* JBecerraEcommerceVentaUITestsLaunchTests.swift */,
+			);
+			path = JBecerraEcommerceVentaUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,6 +401,42 @@
 			productReference = EB6F1C532A1D302200247DD0 /* JBecerraEcommerceVenta.app */;
 			productType = "com.apple.product-type.application";
 		};
+		EBE0BACB2A256F81004F2A5A /* JBecerraEcommerceVentaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBE0BAD42A256F81004F2A5A /* Build configuration list for PBXNativeTarget "JBecerraEcommerceVentaTests" */;
+			buildPhases = (
+				EBE0BAC82A256F81004F2A5A /* Sources */,
+				EBE0BAC92A256F81004F2A5A /* Frameworks */,
+				EBE0BACA2A256F81004F2A5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EBE0BAD12A256F81004F2A5A /* PBXTargetDependency */,
+			);
+			name = JBecerraEcommerceVentaTests;
+			productName = JBecerraEcommerceVentaTests;
+			productReference = EBE0BACC2A256F81004F2A5A /* JBecerraEcommerceVentaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EBE0BAD82A267F8E004F2A5A /* JBecerraEcommerceVentaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBE0BAE12A267F8E004F2A5A /* Build configuration list for PBXNativeTarget "JBecerraEcommerceVentaUITests" */;
+			buildPhases = (
+				EBE0BAD52A267F8E004F2A5A /* Sources */,
+				EBE0BAD62A267F8E004F2A5A /* Frameworks */,
+				EBE0BAD72A267F8E004F2A5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EBE0BAE02A267F8E004F2A5A /* PBXTargetDependency */,
+			);
+			name = JBecerraEcommerceVentaUITests;
+			productName = JBecerraEcommerceVentaUITests;
+			productReference = EBE0BAD92A267F8E004F2A5A /* JBecerraEcommerceVentaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -356,6 +452,14 @@
 					};
 					EB6F1C522A1D302200247DD0 = {
 						CreatedOnToolsVersion = 14.3;
+					};
+					EBE0BACB2A256F81004F2A5A = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = EB6F1C522A1D302200247DD0;
+					};
+					EBE0BAD82A267F8E004F2A5A = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = EB6F1C522A1D302200247DD0;
 					};
 				};
 			};
@@ -377,6 +481,8 @@
 			targets = (
 				EB21C35929FAEEA50060A3BA /* JBecerraEcommerce */,
 				EB6F1C522A1D302200247DD0 /* JBecerraEcommerceVenta */,
+				EBE0BACB2A256F81004F2A5A /* JBecerraEcommerceVentaTests */,
+				EBE0BAD82A267F8E004F2A5A /* JBecerraEcommerceVentaUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -403,6 +509,20 @@
 				EBE0BA832A212CC8004F2A5A /* VentaCollectionViewCell.xib in Resources */,
 				EB6F1C5F2A1D302400247DD0 /* Assets.xcassets in Resources */,
 				EB6F1C5D2A1D302200247DD0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBE0BACA2A256F81004F2A5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBE0BAD72A267F8E004F2A5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -532,7 +652,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EBE0BAC82A256F81004F2A5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBE0BACF2A256F81004F2A5A /* JBecerraEcommerceVentaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBE0BAD52A267F8E004F2A5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBE0BADE2A267F8E004F2A5A /* JBecerraEcommerceVentaUITestsLaunchTests.swift in Sources */,
+				EBE0BADC2A267F8E004F2A5A /* JBecerraEcommerceVentaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EBE0BAD12A256F81004F2A5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB6F1C522A1D302200247DD0 /* JBecerraEcommerceVenta */;
+			targetProxy = EBE0BAD02A256F81004F2A5A /* PBXContainerItemProxy */;
+		};
+		EBE0BAE02A267F8E004F2A5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB6F1C522A1D302200247DD0 /* JBecerraEcommerceVenta */;
+			targetProxy = EBE0BADF2A267F8E004F2A5A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		EB21C36329FAEEA50060A3BA /* Main.storyboard */ = {
@@ -808,6 +958,80 @@
 			};
 			name = Release;
 		};
+		EBE0BAD22A256F81004F2A5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C7W26WRUNK;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.digis.JBecerraEcommerceVentaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JBecerraEcommerceVenta.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/JBecerraEcommerceVenta";
+			};
+			name = Debug;
+		};
+		EBE0BAD32A256F81004F2A5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C7W26WRUNK;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.digis.JBecerraEcommerceVentaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JBecerraEcommerceVenta.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/JBecerraEcommerceVenta";
+			};
+			name = Release;
+		};
+		EBE0BAE22A267F8E004F2A5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C7W26WRUNK;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.digis.JBecerraEcommerceVentaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JBecerraEcommerceVenta;
+			};
+			name = Debug;
+		};
+		EBE0BAE32A267F8E004F2A5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C7W26WRUNK;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.digis.JBecerraEcommerceVentaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JBecerraEcommerceVenta;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -834,6 +1058,24 @@
 			buildConfigurations = (
 				EB6F1C642A1D302400247DD0 /* Debug */,
 				EB6F1C652A1D302400247DD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBE0BAD42A256F81004F2A5A /* Build configuration list for PBXNativeTarget "JBecerraEcommerceVentaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBE0BAD22A256F81004F2A5A /* Debug */,
+				EBE0BAD32A256F81004F2A5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBE0BAE12A267F8E004F2A5A /* Build configuration list for PBXNativeTarget "JBecerraEcommerceVentaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBE0BAE22A267F8E004F2A5A /* Debug */,
+				EBE0BAE32A267F8E004F2A5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
